@@ -14,6 +14,7 @@
 		3E2B8A511BFD627B005D21E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E2B8A4F1BFD627B005D21E0 /* LaunchScreen.storyboard */; };
 		3E2B8A5C1BFD627B005D21E0 /* BucketListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B8A5B1BFD627B005D21E0 /* BucketListTests.swift */; };
 		3E2B8A671BFDB3E2005D21E0 /* MissionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B8A661BFDB3E2005D21E0 /* MissionDetailsViewController.swift */; };
+		3E8E9BEE1BFE5AE90048989C /* CancelButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8E9BED1BFE5AE90048989C /* CancelButtonDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		3E2B8A5B1BFD627B005D21E0 /* BucketListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTests.swift; sourceTree = "<group>"; };
 		3E2B8A5D1BFD627B005D21E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E2B8A661BFDB3E2005D21E0 /* MissionDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionDetailsViewController.swift; sourceTree = "<group>"; };
+		3E8E9BED1BFE5AE90048989C /* CancelButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelButtonDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				3E2B8A461BFD627B005D21E0 /* AppDelegate.swift */,
 				3E2B8A481BFD627B005D21E0 /* BucketListViewController.swift */,
 				3E2B8A4A1BFD627B005D21E0 /* Main.storyboard */,
+				3E8E9BED1BFE5AE90048989C /* CancelButtonDelegate.swift */,
 				3E2B8A661BFDB3E2005D21E0 /* MissionDetailsViewController.swift */,
 				3E2B8A4D1BFD627B005D21E0 /* Assets.xcassets */,
 				3E2B8A4F1BFD627B005D21E0 /* LaunchScreen.storyboard */,
@@ -202,6 +205,7 @@
 			files = (
 				3E2B8A491BFD627B005D21E0 /* BucketListViewController.swift in Sources */,
 				3E2B8A671BFDB3E2005D21E0 /* MissionDetailsViewController.swift in Sources */,
+				3E8E9BEE1BFE5AE90048989C /* CancelButtonDelegate.swift in Sources */,
 				3E2B8A471BFD627B005D21E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +396,7 @@
 				3E2B8A621BFD627B005D21E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E2B8A631BFD627B005D21E0 /* Build configuration list for PBXNativeTarget "BucketListTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +405,7 @@
 				3E2B8A651BFD627B005D21E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

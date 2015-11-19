@@ -45,7 +45,7 @@
                     <navigationItem key="navigationItem" title="Bucket List" id="Php-kC-tO6">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gyF-8S-0I5">
                             <connections>
-                                <segue destination="Woo-qD-134" kind="presentation" id="qMn-Ke-8JP"/>
+                                <segue destination="Woo-qD-134" kind="presentation" identifier="AddNewMission" id="qMn-Ke-8JP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -82,7 +82,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="nbt-UN-wGy">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4yo-82-v2T"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4yo-82-v2T">
+                            <connections>
+                                <action selector="cancelBarButtonPressed:" destination="IPU-Ny-kkv" id="AWr-bm-nJw"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="eQf-7s-Ans"/>
                     </navigationItem>
                 </tableViewController>

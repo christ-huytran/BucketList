@@ -9,5 +9,9 @@
 import UIKit
 
 class MissionDetailsViewController: UITableViewController {
+    weak var cancelButtonDelegate: CancelButtonDelegate?
     
+    @IBAction func cancelBarButtonPressed(sender: UIBarButtonItem) {
+        cancelButtonDelegate?.cancelButtonPressedFrom(self)
+    }
 }
