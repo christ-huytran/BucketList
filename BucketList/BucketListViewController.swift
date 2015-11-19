@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BucketListViewController: UITableViewController, CancelButtonDelegate {
+class BucketListViewController: UITableViewController, CancelButtonDelegate, MissionDetailsViewControllerDelegate {
 
     var missions = ["Sky diving", "Live in Hawaii"]
     
@@ -48,7 +48,14 @@ class BucketListViewController: UITableViewController, CancelButtonDelegate {
             let navigationController = segue.destinationViewController as! UINavigationController
             let controller = navigationController.topViewController as! MissionDetailsViewController
             controller.cancelButtonDelegate = self
+            controller.delegate = self
         }
+    }
+    
+    func missionDetailsViewController(controller: MissionDetailsViewController, didFinishAddingMission mission: String) {
+        dismissViewControllerAnimated(true, completion: nil)
+        missions.append(mission)
+        tableView.reloadData()
     }
 
 }

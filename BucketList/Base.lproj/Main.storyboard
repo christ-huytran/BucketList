@@ -71,6 +71,19 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fmc-A7-MAD" id="z0b-AK-keb">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jvW-aK-oNB">
+                                                    <rect key="frame" x="8" y="8" width="584" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jvW-aK-oNB" firstAttribute="leading" secondItem="z0b-AK-keb" secondAttribute="leadingMargin" id="0bn-ep-vga"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="jvW-aK-oNB" secondAttribute="bottom" id="2H1-Yr-ln1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jvW-aK-oNB" secondAttribute="trailing" id="YE9-xO-Nr2"/>
+                                                <constraint firstItem="jvW-aK-oNB" firstAttribute="top" secondItem="z0b-AK-keb" secondAttribute="topMargin" id="b3v-Qb-cyh"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -87,8 +100,15 @@
                                 <action selector="cancelBarButtonPressed:" destination="IPU-Ny-kkv" id="AWr-bm-nJw"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="eQf-7s-Ans"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="eQf-7s-Ans">
+                            <connections>
+                                <action selector="doneBarButtonPressed:" destination="IPU-Ny-kkv" id="l9W-PE-4rD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="newMissionTextField" destination="jvW-aK-oNB" id="nsV-Y0-vvd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Sn-8X-maw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
