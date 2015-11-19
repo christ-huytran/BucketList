@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BucketListViewController.swift
 //  BucketList
 //
 //  Created by Huy Tran on 11/18/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BucketListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
