@@ -18,7 +18,10 @@ class MissionDetailsViewController: UITableViewController {
     
     // MARK: Actions
     @IBAction func doneBarButtonPressed(sender: UIBarButtonItem) {
-        delegate?.missionDetailsViewController(self, didFinishAddingMission: newMissionTextField.text!)
+        let newMission = Mission(mission: newMissionTextField.text!)
+        newMission.save()
+        print("\(newMission.createdAt)")
+        delegate?.missionDetailsViewController(self, didFinishAddingMission: newMission)
     }
     
     @IBAction func cancelBarButtonPressed(sender: UIBarButtonItem) {

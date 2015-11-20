@@ -20,7 +20,7 @@ class Mission: NSObject, NSCoding {
     
     // MARK: NSCoding protocol
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(mission, forKey: "misssion")
+        aCoder.encodeObject(mission, forKey: "mission")
         aCoder.encodeObject(createdAt, forKey: "createdAt")
     }
     

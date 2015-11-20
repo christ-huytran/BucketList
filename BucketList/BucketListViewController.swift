@@ -10,7 +10,8 @@ import UIKit
 
 class BucketListViewController: UITableViewController, CancelButtonDelegate, MissionDetailsViewControllerDelegate {
 
-    var missions = ["Sky diving", "Live in Hawaii"]
+    // var missions = ["Sky diving", "Live in Hawaii"]
+    var missions = Mission.all()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,7 @@ class BucketListViewController: UITableViewController, CancelButtonDelegate, Mis
         // deque the cell from our storyboard
         let cell = tableView.dequeueReusableCellWithIdentifier("MissionCell")!
         // if the cell has a text label, set it to the model that is corresponding to the row in array
-        cell.textLabel?.text = missions[indexPath.row]
+        cell.textLabel?.text = missions[indexPath.row].mission
         
         // return cell so that TableView knows what to draw in each row
         return cell
@@ -52,9 +53,9 @@ class BucketListViewController: UITableViewController, CancelButtonDelegate, Mis
         }
     }
     
-    func missionDetailsViewController(controller: MissionDetailsViewController, didFinishAddingMission mission: String) {
+    func missionDetailsViewController(controller: MissionDetailsViewController, didFinishAddingMission mission: Mission) {
         dismissViewControllerAnimated(true, completion: nil)
-        missions.append(mission)
+        missions = Mission.all()
         tableView.reloadData()
     }
 
